@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="integration" table="x_872084_integrati_transactions" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>integration</element>
+            <name>x_872084_integrati_transactions</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-08 11:16:47</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>integration</sys_name>
+            <sys_package display_value="Integration Logs" source="x_872084_integrati">aea4b222832aa610bcfc5929feaad371</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Integration Logs">aea4b222832aa610bcfc5929feaad371</sys_scope>
+            <sys_update_name>sys_choice_x_872084_integrati_transactions_integration</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-08 11:16:47</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inbound</label>
+            <language>en</language>
+            <name>x_872084_integrati_transactions</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-08 11:16:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-08 11:16:50</sys_updated_on>
+            <value>inbound</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Outbound</label>
+            <language>en</language>
+            <name>x_872084_integrati_transactions</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-08 11:16:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-08 11:17:00</sys_updated_on>
+            <value>outbound</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="58e47e6a836aa610bcfc5929feaad355" label="Transactions" max_length="40" name="x_872084_integrati_transactions" type="collection">
+        <element choice="3" default="success" hint="Status of the request" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Success" value="success"/>
+                <element inactive_on_update="false" label="Error" value="error"/>
+            </choice>
+        </element>
+        <element hint="Name of integration to which this api call is related" label="System" max_length="150" name="system" type="string"/>
+        <element attributes="json_view" hint="On inbound: payload that external system sent to ServiceNow&#13;&#10;On outbound: payload that ServiceNow sent to external system" label="Payload" max_length="8000" name="payload" type="string"/>
+        <element choice="3" default="post" hint="Which api method was used (POST, GET, PATCH, PUT, DELETE)" label="Method" max_length="40" name="method" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="GET" value="get"/>
+                <element inactive_on_update="false" label="PATCH" value="patch"/>
+                <element inactive_on_update="false" label="POST" value="post"/>
+                <element inactive_on_update="false" label="PUT" value="put"/>
+                <element inactive_on_update="false" label="DELETE" value="delete"/>
+            </choice>
+        </element>
+        <element choice="3" default="inbound" hint="Inbound: api call from external system to ServiceNow&#13;&#10;Outbound: api call from ServiceNow to external system" label="Integration" mandatory="true" max_length="40" name="integration" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inbound" value="inbound"/>
+                <element inactive_on_update="false" label="Outbound" value="outbound"/>
+            </choice>
+        </element>
+        <element label="Status Code" max_length="10" name="status_code" read_only="true" type="integer"/>
+        <element hint="URL endpoint, to which api call was made from ServiceNow or to ServiceNow" label="End Point" max_length="250" name="end_point" type="string"/>
+        <element attributes="json_view" label="Response Body" max_length="4000" name="response_body" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>
