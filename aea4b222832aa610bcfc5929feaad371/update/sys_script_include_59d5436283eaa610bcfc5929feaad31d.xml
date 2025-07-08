@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_872084_integrati.HttpTransactionUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>This is class that holds methods, to log transactions and any additional methods to support or extend functionality</description>
+        <mobile_callable>false</mobile_callable>
+        <name>HttpTransactionUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var HttpTransactionUtils = Class.create();
+HttpTransactionUtils.prototype = {
+  initialize: function () {},
+
+  logHttpRecord: function () {
+    try {
+      /**TODO:
+       * Check mandatory fields? Which ones should be mandatory?
+       * Throw error for mandatory fields if not passed
+       * Check types of passed values
+       */
+      const transactionGr = new GlideRecord("x_872084_integrati_transactions");
+      transactionGr.initialize();
+      transactionGr.setValue("integration", integrationType);
+      transactionGr.setValue("method", integrationMethod);
+      transactionGr.setValue("system", systemName);
+      transactionGr.setValue("end_point", endPoint);
+      transactionGr.setValue("payload", payload);
+      transactionGr.setValue("status", status);
+      transactionGr.setValue("status_code", statusCode);
+      transactionGr.setValue("response_body", responseBody);
+      const newTransactionRecord = transactionGr.insert();
+
+      if (!newTransactionRecord) throw new Error("No record was created!");
+    } catch (error) {
+      gs.error(
+        `Error in HttpTransactionUtils script include. Method:logHttpRecord. Error: ${error.message}`
+      );
+    }
+  },
+
+  type: "HttpTransactionUtils",
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 12:17:53</sys_created_on>
+        <sys_id>59d5436283eaa610bcfc5929feaad31d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>HttpTransactionUtils</sys_name>
+        <sys_package display_value="Integration Logs" source="x_872084_integrati">aea4b222832aa610bcfc5929feaad371</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Integration Logs">aea4b222832aa610bcfc5929feaad371</sys_scope>
+        <sys_update_name>sys_script_include_59d5436283eaa610bcfc5929feaad31d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 13:04:30</sys_updated_on>
+    </sys_script_include>
+</record_update>
