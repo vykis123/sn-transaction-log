@@ -7,7 +7,7 @@
             </choice>
         </element>
         <element hint="Name of integration to which this api call is related" label="System" max_length="150" name="system" type="string"/>
-        <element attributes="json_view" hint="On inbound: payload that external system sent to ServiceNow&#13;&#10;On outbound: payload that ServiceNow sent to external system" label="Payload" max_length="8000" name="payload" type="string"/>
+        <element attributes="json_view" hint="On inbound: payload that external system sent to ServiceNow&#13;&#10;On outbound: payload that ServiceNow sent to external system" label="Request Payload" max_length="8000" name="payload" type="string"/>
         <element choice="3" default="post" hint="Which api method was used (POST, GET, PATCH, PUT, DELETE)" label="Method" max_length="40" name="method" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="GET" value="get"/>
@@ -23,6 +23,7 @@
                 <element inactive_on_update="false" label="Outbound" value="outbound"/>
             </choice>
         </element>
+        <element hint="Query params from the request" label="Query Params" max_length="500" name="query_params" type="string"/>
         <element label="Status Code" max_length="10" name="status_code" read_only="true" type="integer"/>
         <element hint="URL endpoint, to which api call was made from ServiceNow or to ServiceNow" label="End Point" max_length="250" name="end_point" type="string"/>
         <element attributes="json_view" label="Response Body" max_length="4000" name="response_body" type="string"/>

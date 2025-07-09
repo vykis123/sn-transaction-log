@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="payload" table="x_872084_integrati_transactions">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="query_params" table="x_872084_integrati_transactions">
         <active>true</active>
         <array>false</array>
-        <attributes>json_view</attributes>
+        <attributes/>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Request Payload</column_label>
+        <column_label>Query Params</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,7 +26,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>query_params</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -34,7 +34,7 @@
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>8000</max_length>
+        <max_length>500</max_length>
         <name>x_872084_integrati_transactions</name>
         <next_element/>
         <primary>false</primary>
@@ -51,12 +51,12 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-08 11:11:14</sys_created_on>
-        <sys_name>Request Payload</sys_name>
+        <sys_created_on>2025-07-09 10:23:03</sys_created_on>
+        <sys_name>Query Params</sys_name>
         <sys_package display_value="Integration Logs" source="x_872084_integrati">aea4b222832aa610bcfc5929feaad371</sys_package>
         <sys_policy/>
         <sys_scope display_value="Integration Logs">aea4b222832aa610bcfc5929feaad371</sys_scope>
-        <sys_update_name>sys_dictionary_x_872084_integrati_transactions_payload</sys_update_name>
+        <sys_update_name>sys_dictionary_x_872084_integrati_transactions_query_params</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-07-09 10:23:03</sys_updated_on>
         <table_reference>false</table_reference>
