@@ -26,15 +26,15 @@
         <source>x_872084_integrati</source>
         <store_correlation_id/>
         <store_url/>
-        <subscription_entitlement/>
+        <subscription_entitlement display_value="IT Service Management Professional ">c99a585b472ad650f43620a3716d43a5</subscription_entitlement>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-08 11:01:07</sys_created_on>
         <sys_id>aea4b222832aa610bcfc5929feaad371</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 12:00:03</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>A141010</sys_updated_by>
+        <sys_updated_on>2025-07-09 10:43:15</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
@@ -43,12 +43,12 @@
         <vendor_prefix/>
         <version>1.0.0</version>
     </sys_app>
-    <sys_translated_text action="delete_multiple" query="documentkey=aea4b222832aa610bcfc5929feaad371"/>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color/>
         <chunk_size_bytes>700000</chunk_size_bytes>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>logo</file_name>
         <hash>20bcdf4725e70fcf58e49eacdf82ca2c8a1621dc6caa9a2504a2f46c312a35f1</hash>
         <image_height>143</image_height>

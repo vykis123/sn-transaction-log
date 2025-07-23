@@ -5,7 +5,6 @@
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-07-08 11:15:59</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
             <sys_id>9418b6ae836aa610bcfc5929feaad390</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
@@ -19,7 +18,6 @@
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-07-08 11:15:59</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
             <sys_id>9018b6ae836aa610bcfc5929feaad391</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
@@ -34,14 +32,15 @@
             <sys_class_name>sys_ui_form</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-07-08 11:15:58</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
             <sys_id>1418b6ae836aa610bcfc5929feaad38c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_872084_integrati_transactions</sys_name>
             <sys_overrides/>
             <sys_package display_value="Integration Logs" source="x_872084_integrati">aea4b222832aa610bcfc5929feaad371</sys_package>
             <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Integration Logs">aea4b222832aa610bcfc5929feaad371</sys_scope>
             <sys_update_name>sys_ui_form_sections_1418b6ae836aa610bcfc5929feaad38c</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>

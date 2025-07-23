@@ -23,25 +23,26 @@ HttpTransactionUtils.prototype = {
      * statusCode: number,
      * responseBody: string,
 	 * queryParam: string
+	 * apiName: string
 	 * }} dataObject
      */
     logHttpRecord: function(dataObject) {
         const {
             integrationType,
-            systemName,
+            systemName = "",
             endPoint,
-            payload,
+            payload = "",
             statusCode,
-            responseBody,
+            responseBody = "",
             integrationMethod,
-            queryParam = ""
+            queryParam = "",
+			apiName = ""
         } = dataObject;
 
         const status = statusCode.toString().startsWith("2") ? "success" : "error";
 
         try {
 			if (!integrationMethod) throw new Error("Missing integrationType. It is required!");
-			if (!systemName) throw new Error("Missing systemName. It is required!");
 			if (!endPoint) throw new Error("Missing endPoint. It is required!");
 			if (!statusCode) throw new Error("Missing statusCode. It is required!");
 			if (!integrationMethod) throw new Error("Missing integrationMethod. It is required!");
@@ -57,6 +58,7 @@ HttpTransactionUtils.prototype = {
             transactionGr.setValue("status_code", statusCode);
             transactionGr.setValue("response_body", responseBody);
             transactionGr.setValue("query_params", queryParam);
+            transactionGr.setValue("api_name", apiName);
             const newTransactionRecord = transactionGr.insert();
 
             if (!newTransactionRecord) throw new Error("No record was created!");
@@ -72,14 +74,27 @@ HttpTransactionUtils.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-08 12:17:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>59d5436283eaa610bcfc5929feaad31d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>HttpTransactionUtils</sys_name>
         <sys_package display_value="Integration Logs" source="x_872084_integrati">aea4b222832aa610bcfc5929feaad371</sys_package>
         <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Integration Logs">aea4b222832aa610bcfc5929feaad371</sys_scope>
         <sys_update_name>sys_script_include_59d5436283eaa610bcfc5929feaad31d</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 10:32:55</sys_updated_on>
+        <sys_updated_by>A141010</sys_updated_by>
+        <sys_updated_on>2025-07-23 14:33:11</sys_updated_on>
     </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>59d5436283eaa610bcfc5929feaad31d</id>
+        <sys_created_by>A141010</sys_created_by>
+        <sys_created_on>2025-07-23 14:30:52</sys_created_on>
+        <sys_id>6d84f46f87f6a250c0d9c95f8bbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>A141010</sys_updated_by>
+        <sys_updated_on>2025-07-23 14:30:52</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
