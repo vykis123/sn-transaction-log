@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Transactions">7465f6aa836aa610bcfc5929feaad340</application>
+        <application display_value="Custom API Transactions">7465f6aa836aa610bcfc5929feaad340</application>
         <assessment/>
         <content_page/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>Table that contains logs for custom api transactions</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
@@ -14,7 +14,7 @@
         <mobile_title>Transactions</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_872084_integrati_transactions</name>
-        <order/>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7c65f6aa836aa610bcfc5929feaad344</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Integration Transactions</sys_name>
         <sys_overrides/>
         <sys_package display_value="Integration Logs" source="x_872084_integrati">aea4b222832aa610bcfc5929feaad371</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Integration Logs">aea4b222832aa610bcfc5929feaad371</sys_scope>
         <sys_update_name>sys_app_module_7c65f6aa836aa610bcfc5929feaad344</sys_update_name>
         <sys_updated_by>A141010</sys_updated_by>
-        <sys_updated_on>2025-07-23 14:24:52</sys_updated_on>
+        <sys_updated_on>2025-07-23 14:54:04</sys_updated_on>
         <timeline_page/>
         <title>Integration Transactions</title>
         <uncancelable>false</uncancelable>
